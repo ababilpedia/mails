@@ -110,7 +110,7 @@
                                     <!-- Input tidak perlu pakai @sonten.web.id lagi -->
                                     <input id="inspectEmailPrefix" type="text" class="w-full rounded-l-2xl border border-r-0 border-slate-200 pl-11 py-3.5 text-sm font-bold text-slate-900 focus:border-red-500 outline-none transition-all" placeholder="Ketik nama user..." autocomplete="off" />
                                     <div class="bg-slate-50 border border-l-0 border-slate-200 rounded-r-2xl px-5 flex items-center text-sm font-extrabold text-slate-400 shrink-0">
-                                        @sonten.web.id
+                                        @ababilpedia.web.id
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +179,7 @@
                                 <div class="flex shadow-sm rounded-2xl group focus-within:ring-4 focus-within:ring-red-500/20 transition-all">
                                     <input id="newEmailPrefix" type="text" class="w-full rounded-l-2xl border border-r-0 border-slate-200 px-5 py-4 text-sm font-bold text-slate-900 focus:border-red-500 outline-none transition-all bg-slate-50/50 focus:bg-white" placeholder="namauser" autocomplete="off" />
                                     <div class="bg-slate-100 border border-l-0 border-slate-200 rounded-r-2xl px-5 flex items-center text-sm font-extrabold text-slate-400 shrink-0">
-                                        @sonten.web.id
+                                        @ababilpedia.web.id
                                     </div>
                                 </div>
                             </div>
@@ -588,7 +588,7 @@
                 return;
             }
 
-            const email = emailPrefix + "@sonten.web.id";
+            const email = emailPrefix + "@ababilpedia.web.id";
 
             setLoading(true);
             try {
@@ -683,7 +683,7 @@
             const listEl = document.getElementById("inspectList");
             if (!prefix) return;
 
-            const email = prefix + "@sonten.web.id";
+            const email = prefix + "@ababilpedia.web.id";
 
             try {
                 const res = await fetch(API_BASE + "/api/admin/messages?email=" + encodeURIComponent(email), { headers: authHeaders() });
